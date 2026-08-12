@@ -1,0 +1,44 @@
+# robots.txt for TikTokDL - TikTok Downloader Tanpa Watermark
+# URL: https://tiktok-dl-mu-ten.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /static/
+Disallow: /assets/
+
+# Allow main pages
+Allow: /index.html
+
+# Sitemap location
+Sitemap: https://tiktok-dl-mu-ten.vercel.app/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
