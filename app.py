@@ -775,6 +775,19 @@ def convert_slides_to_video():
             pass
 
 
+
+
+@app.route('/robots.txt')
+def robots():
+    """Serve robots.txt file."""
+    return send_from_directory('static', 'robots.txt', mimetype='text/plain')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    """Serve sitemap.xml file."""
+    return send_from_directory('static', 'sitemap.xml', mimetype='application/xml')
+
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 3000))
     app.run(host='0.0.0.0', port=port, debug=True)
